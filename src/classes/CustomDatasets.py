@@ -64,6 +64,7 @@ class CustomVOCDataset(Dataset):
         target = {"boxes": boxes, "labels": labels}
 
         if self.transforms is not None:
-            img, target = self.transforms(img, target)
+            self.transforms(img)
+            self.transforms(target)
 
         return img, target
