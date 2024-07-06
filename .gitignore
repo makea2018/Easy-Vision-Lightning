@@ -4,3 +4,5 @@ Datasets
 .idea
 
 __pycache__
+
+tb_logs/*
